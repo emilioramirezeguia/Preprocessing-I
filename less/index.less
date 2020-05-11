@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,5 +55,126 @@ table {
 
 html, body {
     height: 100%;
+		font-size: 62.5%;
 }
 
+//Variables
+@h1-size: 3.2rem;
+@h2-size: 2.4rem;
+@h3-size: 1.872rem;
+@standard-text-size: 1.6rem;
+@section-margin: 2.5% 5%;
+
+//Mixins
+.align-right(){
+	display: flex;
+	justify-content: flex-end;
+}
+
+//Container styles
+.container {
+	width: 100%;
+}
+
+//Intro Header
+header {
+	.align-right();
+
+	nav {
+		margin: 2.5% 5% 0;
+		width: 25%;
+
+		a {
+			color: black;
+			font-size: @standard-text-size;
+			letter-spacing: .5px;
+			padding: 0 5%;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+//Intro Section
+.intro {
+	background-color: lightgray;
+	padding: 5% 0;
+	margin: @section-margin;
+
+	.intro-profile {
+
+		img {
+			margin: 1% 5% 1% 5%;
+		}
+
+		h1 {
+			font-size: @h1-size;
+			margin: 1% 5%;
+		}
+
+		h3 {
+			font-size: @h3-size;
+			margin: 2% 5%;
+		}
+	}
+
+	hr {
+		border: 1px solid gray;
+		width: 90%;
+	}
+
+	.intro-contact {
+		p {
+			font-size: @standard-text-size;
+			margin: 2% 5%;
+		}
+
+		a {
+			background-color: gray;
+			border: 1px solid gray;
+			border-radius: 5px;
+			color: white;
+			font-size: @standard-text-size;
+			margin: 2% 5%;
+			padding: 1% 2%;
+			text-decoration: none;
+
+			&:hover {
+				background-color: white;
+				color: gray;
+			}
+		}
+	}
+}
+
+//Skills Section
+.skills {
+	display: flex;
+	margin: @section-margin;
+
+	.skills-recap {
+		width: 50%;
+
+		h2 {
+			font-size: @h2-size;
+			margin-bottom: 1%;
+		}
+
+		p {
+			font-size: @standard-text-size;
+			margin-top: 1%;
+		}
+	}
+
+	.skills-list {
+		width: 50%;
+		
+		h2 {
+			font-size: @h2-size;
+			margin-bottom: 1%;
+		}
+	}
+}
