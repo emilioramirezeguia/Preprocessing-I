@@ -79,18 +79,15 @@ html, body {
 //Intro Header
 header {
 	.align-right();
-
 	nav {
 		margin: 2.5% 5% 0;
 		width: 25%;
-
 		a {
 			color: black;
 			font-size: @standard-text-size;
 			letter-spacing: .5px;
 			padding: 0 5%;
 			text-decoration: none;
-
 			&:hover {
 				text-decoration: underline;
 			}
@@ -103,35 +100,28 @@ header {
 	background-color: lightgray;
 	padding: 5% 0;
 	margin: @section-margin;
-
 	.intro-profile {
-
 		img {
 			margin: 1% 5% 1% 5%;
 		}
-
 		h1 {
 			font-size: @h1-size;
 			margin: 1% 5%;
 		}
-
 		h3 {
 			font-size: @h3-size;
 			margin: 2% 5%;
 		}
 	}
-
 	hr {
 		border: 1px solid gray;
 		width: 90%;
 	}
-
 	.intro-contact {
 		p {
 			font-size: @standard-text-size;
 			margin: 2% 5%;
 		}
-
 		a {
 			background-color: gray;
 			border: 1px solid gray;
@@ -141,7 +131,6 @@ header {
 			margin: 2% 5%;
 			padding: 1% 2%;
 			text-decoration: none;
-
 			&:hover {
 				background-color: white;
 				color: gray;
@@ -154,27 +143,32 @@ header {
 .skills {
 	display: flex;
 	margin: @section-margin;
-
 	.skills-recap {
 		width: 50%;
-
 		h2 {
 			font-size: @h2-size;
-			margin-bottom: 1%;
+			margin-bottom: 2.5%;
 		}
-
 		p {
 			font-size: @standard-text-size;
-			margin-top: 1%;
+			line-height: 1.4;
+			margin-top: 2.5%;
 		}
 	}
-
 	.skills-list {
 		width: 50%;
-		
 		h2 {
 			font-size: @h2-size;
-			margin-bottom: 1%;
+			margin-bottom: 2.5%;
+		}
+
+		ul {
+			font-size: 1.6rem;
+			margin-top: 2.5%;
+			li {
+				border: 1px solid lightgray;
+				padding: 2%;
+			}
 		}
 	}
 }
