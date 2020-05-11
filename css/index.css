@@ -156,13 +156,37 @@ body {
 .container header nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  .container header nav a {
+    font-size: 2.4rem;
+    padding: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container .intro {
-  background-color: lightgray;
+  background-color: #B0C4DE;
   padding: 5% 0;
   margin: 2.5% 5%;
 }
 .container .intro .intro-profile img {
   margin: 1% 5% 1% 5%;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-profile img {
+    margin-bottom: 5%;
+    width: 80%;
+  }
 }
 .container .intro .intro-profile h1 {
   font-size: 3.2rem;
@@ -172,8 +196,15 @@ body {
   font-size: 1.872rem;
   margin: 2% 5%;
 }
+@media (max-width: 500px) {
+  .container .intro .intro-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container .intro hr {
-  border: 1px solid gray;
+  border: 1px solid #4682B4;
   width: 90%;
 }
 .container .intro .intro-contact p {
@@ -181,8 +212,8 @@ body {
   margin: 2% 5%;
 }
 .container .intro .intro-contact a {
-  background-color: gray;
-  border: 1px solid gray;
+  background-color: #4682B4;
+  border: 1px solid #4682B4;
   border-radius: 5px;
   color: white;
   font-size: 1.6rem;
@@ -192,7 +223,14 @@ body {
 }
 .container .intro .intro-contact a:hover {
   background-color: white;
-  color: gray;
+  color: #4682B4;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .skills {
   display: flex;
@@ -222,8 +260,15 @@ body {
   margin-top: 2.5%;
 }
 .container .skills .skills-list ul li {
-  border: 1px solid lightgray;
+  border: 1px solid #B0C4DE;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .work-section {
   margin: 2.5% 5%;
@@ -239,22 +284,31 @@ body {
   width: 100%;
 }
 .container .work-section table th {
-  background: gray;
+  background: #4682B4;
   color: white;
   font-weight: bold;
   padding: 1%;
 }
-.container .work-section table tr td {
+.container .work-section table td {
   padding: 1%;
 }
 .container .work-section table tr:nth-of-type(odd) {
   background: #eee;
 }
 .container footer {
-  background-color: gray;
+  background-color: #4682B4;
   color: white;
   font-size: 1.6rem;
   margin-top: 5%;
   padding: 2.5%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
