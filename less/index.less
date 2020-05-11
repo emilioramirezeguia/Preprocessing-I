@@ -172,3 +172,40 @@ header {
 		}
 	}
 }
+
+//Work section
+.work-section {
+	margin: @section-margin;
+	h2 {
+		font-size: @h2-size;
+		margin-bottom: 2.5%;
+	}
+	table {
+		font-size: @standard-text-size;
+		margin-top: 2.5%;
+		text-align: left;
+		width: 100%;
+		th {
+			background: gray;
+			color: white;
+			font-weight: bold;
+			padding: 1%;
+		}
+		tr {
+			td {
+				padding: 1%;
+			}
+		}
+		tr:nth-of-type(odd) {
+			background: #eee;
+		}
+	}
+}
+
+footer {
+	background-color: gray;
+	color: white;
+	font-size: @standard-text-size;
+	padding: 2.5%;
+	text-align: center;
+}
