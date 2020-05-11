@@ -138,49 +138,49 @@ body {
 .container {
   width: 100%;
 }
-header {
+.container header {
   display: flex;
   justify-content: flex-end;
 }
-header nav {
+.container header nav {
   margin: 2.5% 5% 0;
   width: 25%;
 }
-header nav a {
+.container header nav a {
   color: black;
   font-size: 1.6rem;
   letter-spacing: 0.5px;
   padding: 0 5%;
   text-decoration: none;
 }
-header nav a:hover {
+.container header nav a:hover {
   text-decoration: underline;
 }
-.intro {
+.container .intro {
   background-color: lightgray;
   padding: 5% 0;
   margin: 2.5% 5%;
 }
-.intro .intro-profile img {
+.container .intro .intro-profile img {
   margin: 1% 5% 1% 5%;
 }
-.intro .intro-profile h1 {
+.container .intro .intro-profile h1 {
   font-size: 3.2rem;
   margin: 1% 5%;
 }
-.intro .intro-profile h3 {
+.container .intro .intro-profile h3 {
   font-size: 1.872rem;
   margin: 2% 5%;
 }
-.intro hr {
+.container .intro hr {
   border: 1px solid gray;
   width: 90%;
 }
-.intro .intro-contact p {
+.container .intro .intro-contact p {
   font-size: 1.6rem;
   margin: 2% 5%;
 }
-.intro .intro-contact a {
+.container .intro .intro-contact a {
   background-color: gray;
   border: 1px solid gray;
   border-radius: 5px;
@@ -190,70 +190,71 @@ header nav a:hover {
   padding: 1% 2%;
   text-decoration: none;
 }
-.intro .intro-contact a:hover {
+.container .intro .intro-contact a:hover {
   background-color: white;
   color: gray;
 }
-.skills {
+.container .skills {
   display: flex;
   margin: 2.5% 5%;
 }
-.skills .skills-recap {
+.container .skills .skills-recap {
   width: 50%;
 }
-.skills .skills-recap h2 {
+.container .skills .skills-recap h2 {
   font-size: 2.4rem;
   margin-bottom: 2.5%;
 }
-.skills .skills-recap p {
+.container .skills .skills-recap p {
   font-size: 1.6rem;
   line-height: 1.4;
   margin-top: 2.5%;
 }
-.skills .skills-list {
+.container .skills .skills-list {
   width: 50%;
 }
-.skills .skills-list h2 {
+.container .skills .skills-list h2 {
   font-size: 2.4rem;
   margin-bottom: 2.5%;
 }
-.skills .skills-list ul {
+.container .skills .skills-list ul {
   font-size: 1.6rem;
   margin-top: 2.5%;
 }
-.skills .skills-list ul li {
+.container .skills .skills-list ul li {
   border: 1px solid lightgray;
   padding: 2%;
 }
-.work-section {
+.container .work-section {
   margin: 2.5% 5%;
 }
-.work-section h2 {
+.container .work-section h2 {
   font-size: 2.4rem;
   margin-bottom: 2.5%;
 }
-.work-section table {
+.container .work-section table {
   font-size: 1.6rem;
   margin-top: 2.5%;
   text-align: left;
   width: 100%;
 }
-.work-section table th {
+.container .work-section table th {
   background: gray;
   color: white;
   font-weight: bold;
   padding: 1%;
 }
-.work-section table tr td {
+.container .work-section table tr td {
   padding: 1%;
 }
-.work-section table tr:nth-of-type(odd) {
+.container .work-section table tr:nth-of-type(odd) {
   background: #eee;
 }
-footer {
+.container footer {
   background-color: gray;
   color: white;
   font-size: 1.6rem;
+  margin-top: 5%;
   padding: 2.5%;
   text-align: center;
 }
