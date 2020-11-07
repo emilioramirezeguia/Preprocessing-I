@@ -1,1 +1,380 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+}
+.container header nav {
+  margin: 2.5% 5% 0;
+  width: 30%;
+}
+.container header nav a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  padding: 0 5%;
+  text-decoration: none;
+}
+.container header nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    font-size: 2.4rem;
+    padding: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .intro {
+  background-color: #B0C4DE;
+  padding: 5% 0;
+  margin: 2.5% 5%;
+}
+.container .intro .intro-profile img {
+  margin: 1% 5% 1% 5%;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-profile img {
+    margin-bottom: 5%;
+    width: 80%;
+  }
+}
+.container .intro .intro-profile h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: 1% 5%;
+}
+.container .intro .intro-profile h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.872rem;
+  margin: 2% 5%;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .intro hr {
+  border: 1px solid #4682B4;
+  width: 90%;
+}
+.container .intro .intro-contact p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 2% 5%;
+}
+.container .intro .intro-contact a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #4682B4;
+  border: 1px solid #4682B4;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.6rem;
+  margin: 2% 5%;
+  padding: 1% 2%;
+  text-decoration: none;
+}
+.container .intro .intro-contact a:hover {
+  background-color: white;
+  color: #4682B4;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-contact a {
+    padding: 5% 10%;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro .intro-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .skills {
+  display: flex;
+  margin: 2.5% 5%;
+}
+.container .skills .skills-recap {
+  width: 50%;
+}
+.container .skills .skills-recap h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 2.5%;
+}
+.container .skills .skills-recap p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-top: 2.5%;
+}
+@media (max-width: 500px) {
+  .container .skills .skills-recap {
+    margin: 5% 0;
+    width: 90%;
+  }
+}
+.container .skills .skills-list {
+  width: 50%;
+}
+.container .skills .skills-list h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 2.5%;
+}
+.container .skills .skills-list ul {
+  font-size: 1.6rem;
+  margin-top: 2.5%;
+}
+.container .skills .skills-list ul li {
+  border: 1px solid #B0C4DE;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .skills .skills-list {
+    margin: 5% 0;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .work-section {
+  margin: 2.5% 5%;
+}
+.container .work-section h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 2.5%;
+}
+.container .work-section table {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 2.5%;
+  text-align: left;
+  width: 100%;
+}
+.container .work-section table th {
+  background: #4682B4;
+  color: white;
+  font-weight: bold;
+  padding: 1%;
+}
+.container .work-section table td {
+  padding: 1%;
+}
+.container .work-section table tr:nth-of-type(odd) {
+  background: #eee;
+}
+@media (max-width: 500px) {
+  .container .work-section {
+    margin: 7.5% 7.5%;
+  }
+}
+.container footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #4682B4;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 5%;
+  padding: 2.5%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container footer p {
+    margin: 2.5% 0;
+  }
+}
